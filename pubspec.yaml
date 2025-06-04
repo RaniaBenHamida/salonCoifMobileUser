@@ -1,0 +1,60 @@
+name: beautyTn
+description: beautyTn
+
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.4 <4.0.0"
+  flutter: ">=3.24.4 <4.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  get: ^4.6.6
+  flutter_screenutil: ^5.9.3
+  get_storage: ^2.1.1
+  intl:
+  flutter_svg:
+  r_dotted_line_border: ^0.1.1
+  carousel_slider: ^5.0.0
+  pin_code_fields:
+  flutter_inappwebview:
+  logger: ^2.4.0
+  loading_animation_widget:
+  restart_app:
+  image_picker:
+
+  cached_network_image:
+  shimmer:
+  google_fonts: ^6.2.1
+  flutter_animate: ^4.5.2
+  dropdown_button2:
+  lottie:
+  dynamic_languages:
+    git:
+      url: https://github.com/appdevsx/dynamic_languages
+      ref: main
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  dart_code_metrics:
+  change_app_package_name:
+  flutter_launcher_icons:
+  rename_app:
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: false
+  image_path: "assets/logo/appLauncher.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animation/
+    # - assets/icons/rtu
+    - assets/logo/
