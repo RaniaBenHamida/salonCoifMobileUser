@@ -30,9 +30,9 @@ class NavProfileWidget extends GetView<ProfileController> {
                       backgroundImage: profileModel
                               .profileInfoModel.data.userInfo.image.isEmpty
                           ? NetworkImage(
-                              "${profileModel.profileInfoModel.data.imagePaths.baseUrl}/${profileModel.profileInfoModel.data.imagePaths.defaultImage}")
+                              "${profileModel.profileInfoModel.data.imagePaths.baseUrl}/${profileModel.profileInfoModel.data.imagePaths.cleanedDefaultImage}")
                           : NetworkImage(
-                              "${profileModel.profileInfoModel.data.imagePaths.baseUrl}/${profileModel.profileInfoModel.data.imagePaths.pathLocation}/${profileModel.profileInfoModel.data.userInfo.image}")),
+                              "${profileModel.profileInfoModel.data.imagePaths.baseUrl}/${profileModel.profileInfoModel.data.imagePaths.cleanedPathLocation}/${profileModel.profileInfoModel.data.userInfo.image}")),
               Sizes.width.v10,
               Expanded(
                 child: Column(

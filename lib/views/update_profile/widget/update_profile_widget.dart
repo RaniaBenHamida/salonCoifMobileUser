@@ -21,8 +21,8 @@ class UpdateProfileWidget extends GetView<UpdateProfileController> {
                   shape: BoxShape.circle,
                   filePath: controller.imagePath.value,
                   image: data.image.isEmpty
-                      ? "${controller.profileInfoModel.data.imagePaths.baseUrl}/${controller.profileInfoModel.data.imagePaths.defaultImage}"
-                      : "${controller.profileInfoModel.data.imagePaths.baseUrl}/${controller.profileInfoModel.data.imagePaths.pathLocation}/${data.image}")),
+                      ? "${controller.profileInfoModel.data.imagePaths.baseUrl}/${controller.profileInfoModel.data.imagePaths.cleanedDefaultImage}"
+                      : "${controller.profileInfoModel.data.imagePaths.baseUrl}/${controller.profileInfoModel.data.imagePaths.cleanedPathLocation}/${data.image}")),
               Positioned(
                   child: IconButton(
                       onPressed: () {

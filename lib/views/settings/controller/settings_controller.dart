@@ -15,14 +15,14 @@ class SettingsController extends GetxController {
     //     // Routes.kycInformationScreen.toNamed;
     //   },
     // ),
-    SetupMethodModel(
-      title: Strings.toFaSecurity,
-      description: "",
-      icon: Icons.lock_rounded,
-      onTap: () {
-        Routes.twoFaScreen.toNamed;
-      },
-    ),
+    // SetupMethodModel(
+    //   title: Strings.toFaSecurity,
+    //   description: "",
+    //   icon: Icons.lock_rounded,
+    //   onTap: () {
+    //     Routes.twoFaScreen.toNamed;
+    //   },
+    // ),
     SetupMethodModel(
       title: Strings.changePassword,
       description: '',

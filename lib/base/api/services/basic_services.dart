@@ -39,7 +39,7 @@ class BasicServices {
         onboardScreen.clear();
         basePath.value = _basicSettingsModel.data.appImagePaths.baseUrl;
         pathLocation.value =
-            _basicSettingsModel.data.appImagePaths.pathLocation;
+            _basicSettingsModel.data.appImagePaths.cleanedPathLocation;
         var splash = _basicSettingsModel.data.splashScreen.splashScreenImage;
         debugPrint(_basicSettingsModel.data.splashScreen.splashScreenImage);
         // splash
@@ -71,11 +71,11 @@ class BasicServices {
         // agreePolicy.value = _basicSettingsModel.data.basicSettings.agreePolicy;
 
         appBasicLogoWhite.value =
-            '${imagePaths.basePath}/${imagePaths.pathLocation}/${siteLogo}';
+            '${imagePaths.basePath}/${imagePaths.cleanedPathLocation}/${siteLogo}';
         appBasicLogoDark.value =
-            '${imagePaths.basePath}/${imagePaths.pathLocation}/${siteLogoDark}';
+            '${imagePaths.basePath}/${imagePaths.cleanedPathLocation}/${siteLogoDark}';
         appLauncher.value =
-            '${imagePaths.basePath}/${imagePaths.pathLocation}/${siteLogo}';
+            '${imagePaths.basePath}/${imagePaths.cleanedPathLocation}/${siteLogo}';
 
         Strings.appName = siteName.value;
         debugPrint("Base Color -- >>  ${baseColor.value}");

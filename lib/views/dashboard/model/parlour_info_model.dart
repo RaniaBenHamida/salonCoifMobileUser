@@ -70,6 +70,13 @@ class ParlourImagePath {
     pathLocation: json["path_location"],
     defaultImage: json["default_image"],
   );
+   // Getter that returns pathLocation without "public/" if it starts with it
+  String get cleanedPathLocation {
+    if (pathLocation.startsWith('public/')) {
+      return pathLocation.substring(7); // remove "public/"
+    }
+    return pathLocation;
+  }
 }
 
 class ParlourList {

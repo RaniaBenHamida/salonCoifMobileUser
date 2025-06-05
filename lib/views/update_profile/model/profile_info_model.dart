@@ -75,7 +75,21 @@ class ImagePaths {
     baseUrl: json["base_url"],
     pathLocation: json["path_location"],
     defaultImage: json["default_image"],
+
+    
   );
+  String get cleanedPathLocation {
+    if (pathLocation.startsWith('public/')) {
+      return pathLocation.substring(7); // remove "public/"
+    }
+    return pathLocation;
+  }
+  String get cleanedDefaultImage {
+    if (defaultImage.startsWith('public/')) {
+      return defaultImage.substring(7); // remove "public/"
+    }
+    return defaultImage;
+  }
 }
 
 class UserInfo {

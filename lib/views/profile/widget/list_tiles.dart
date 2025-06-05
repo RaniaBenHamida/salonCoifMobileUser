@@ -36,20 +36,20 @@ class ListTiles extends GetView<ProfileController> {
           //   text: Strings.blog,
           //   leadingIcon: Icons.panorama_photosphere,
           // ),
-          CustomTiles(
-            onTap: () {
-              Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/link/refund-policy"));
-            },
-            text: Strings.refund,
-            leadingIcon: Icons.currency_exchange,
-          ),
-          CustomTiles(
-            onTap: () {
-              Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/link/privacy-policy"));
-            },
-            text: Strings.privacyPolicy,
-            leadingIcon: Icons.policy_outlined,
-          ),
+          // CustomTiles(
+          //   onTap: () {
+          //     Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/link/refund-policy"));
+          //   },
+          //   text: Strings.refund,
+          //   leadingIcon: Icons.currency_exchange,
+          // ),
+          // CustomTiles(
+          //   onTap: () {
+          //     Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/link/privacy-policy"));
+          //   },
+          //   text: Strings.privacyPolicy,
+          //   leadingIcon: Icons.policy_outlined,
+          // ),
           CustomTiles(
             onTap: () {
               Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/about"));
@@ -57,13 +57,13 @@ class ListTiles extends GetView<ProfileController> {
             text: Strings.aboutUs,
             leadingIcon: Icons.info_outline_rounded,
           ),
-          CustomTiles(
-            onTap: () {
-              Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/contact"));
-            },
-            text: Strings.contact,
-            leadingIcon: Icons.markunread_mailbox_outlined,
-          ),
+          // CustomTiles(
+          //   onTap: () {
+          //     Get.to(FlutterWebScreen(url: ApiConfig.mainDomain + "/contact"));
+          //   },
+          //   text: Strings.contact,
+          //   leadingIcon: Icons.markunread_mailbox_outlined,
+          // ),
           Obx(() => controller.isLoading ? Loader(color: CustomColor.primary,): CustomTiles(
             onTap: () {
               CustomDialog.open(

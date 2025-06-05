@@ -61,7 +61,7 @@ class SalonService extends GetView<FindController> {
                                       child: CustomCachedImageWidget(
                                           image: data.image.isEmpty
                                               ? "${dashboardController.parlourListInfo.data.parlourImagePath.baseUrl}/${dashboardController.parlourListInfo.data.parlourImagePath.defaultImage}"
-                                              : "${dashboardController.parlourListInfo.data.parlourImagePath.baseUrl}/${dashboardController.parlourListInfo.data.parlourImagePath.pathLocation}/${data.image}")),
+                                              : "${dashboardController.parlourListInfo.data.parlourImagePath.baseUrl}/${dashboardController.parlourListInfo.data.parlourImagePath.cleanedPathLocation}/${data.image}")),
                                   Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Column(
