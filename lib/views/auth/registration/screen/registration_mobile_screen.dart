@@ -21,7 +21,7 @@ class RegistrationMobileScreen extends GetView<RegistrationController> {
         child: ListView(
           children: [
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.12,
+              height: MediaQuery.of(context).size.height * 0.20,
               child: const BrandLogo(),
             ),
             const ReqHeadLineWidget(),

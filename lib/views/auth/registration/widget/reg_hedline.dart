@@ -13,11 +13,11 @@ class ReqHeadLineWidget extends StatelessWidget {
         crossAxisAlignment: crossStart,
         children: [
           Sizes.height.v10,
-          const TextWidget(
-            Strings.registerForAnAccount,
-            fontWeight: FontWeight.bold,
-            typographyStyle: TypographyStyle.headlineSmall,
-          ),
+          // const TextWidget(
+          //   Strings.registerForAnAccount,
+          //   fontWeight: FontWeight.bold,
+          //   typographyStyle: TypographyStyle.headlineSmall,
+          // ),
           TextWidget(
             Strings.registrationSubTitle,
             fontWeight: FontWeight.w500,

@@ -14,7 +14,7 @@ class ParlourInformation extends GetView<BookingDetailController> {
         Sizes.height.v10,
         DoubleSideTextWidget(keys: Strings.parlourName, value: controller.data.parlour.name, needDivider: false),
         DoubleSideTextWidget(keys: Strings.contact, value: controller.data.parlour.contact, needDivider: false),
-        DoubleSideTextWidget(keys: Strings.address, value: controller.data.parlour.address, needDivider: false),
+        DoubleSideTextWidget(keys: Strings.address, value: "Sousse , Sahloul , 4000", needDivider: false),
       ],
     );
   }

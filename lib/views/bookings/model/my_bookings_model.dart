@@ -45,6 +45,12 @@ class ImagePath {
     pathLocation: json["path_location"],
     defaultImage: json["default_image"],
   );
+     String get cleanedPathLocation {
+    if (pathLocation.startsWith('public/')) {
+      return pathLocation.substring(7); // remove "public/"
+    }
+    return pathLocation;
+  }
 }
 
 class Datum {

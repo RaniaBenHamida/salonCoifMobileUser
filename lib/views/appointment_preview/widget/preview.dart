@@ -29,9 +29,9 @@ class Preview extends GetView<AppointmentPreviewController> {
             DoubleSideTextWidget(keys: Strings.date, value: controller.previewController.selectedDate.value, needDivider: false),
             DoubleSideTextWidget(keys: Strings.schedule, value: controller.previewController.selectedTime, needDivider: false),
             DoubleSideTextWidget(keys: Strings.serialNumber, value: "${controller.previewController.checkoutModel.data.serialNumber}", needDivider: false),
-            DoubleSideTextWidget(keys: Strings.amount, value: "\$${controller.previewController.checkoutModel.data.price.toStringAsFixed(2)}", needDivider: false),
-            DoubleSideTextWidget(keys: Strings.feesAndCharge, value: "\$${(controller.previewController.checkoutModel.data.payablePrice - controller.previewController.checkoutModel.data.price).toStringAsFixed(2)}", needDivider: false),
-            DoubleSideTextWidget(keys: Strings.payableAmount, value: "\$${controller.previewController.checkoutModel.data.payablePrice.toStringAsFixed(2)}", needDivider: false),
+            DoubleSideTextWidget(keys: Strings.amount, value: "\TND${controller.previewController.checkoutModel.data.price.toStringAsFixed(2)}", needDivider: false),
+            DoubleSideTextWidget(keys: Strings.feesAndCharge, value: "\TND${(controller.previewController.checkoutModel.data.payablePrice - controller.previewController.checkoutModel.data.price).toStringAsFixed(2)}", needDivider: false),
+            DoubleSideTextWidget(keys: Strings.payableAmount, value: "\TND${controller.previewController.checkoutModel.data.payablePrice.toStringAsFixed(2)}", needDivider: false),
           ],
         )
     );

@@ -126,7 +126,7 @@ class BasicSettings {
 
   factory BasicSettings.fromJson(Map<String, dynamic> json) => BasicSettings(
     id: json["id"],
-    userRegistration: json["user_registration"],
+    userRegistration: json["user_registration"] ,
     agreePolicy: json["agree_policy"],
     siteName: json["site_name"],
     baseColor: json["base_color"],

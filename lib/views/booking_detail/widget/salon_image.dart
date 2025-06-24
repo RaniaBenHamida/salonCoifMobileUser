@@ -18,6 +18,6 @@ class SalonImage extends GetView<BookingDetailController> {
         child: CustomCachedImageWidget(
             radius: Dimensions.radius, image: data.parlour.image.isEmpty
             ? "${imagePath.baseUrl}/${imagePath.defaultImage}"
-            : "${imagePath.baseUrl}/${imagePath.pathLocation}/${data.parlour.image}"));
+            : "${imagePath.baseUrl}/${imagePath.cleanedPathLocation}/${data.parlour.image}"));
   }
 }

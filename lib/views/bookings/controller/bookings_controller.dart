@@ -71,6 +71,6 @@ class BookingsController extends GetxController {
           schedule: bk.schedule));
     });
     imagePath.value = "${_myBookingsModel.data.imagePath.baseUrl}";
-    pathLocation.value = "${_myBookingsModel.data.imagePath.pathLocation}";
+    pathLocation.value = "${_myBookingsModel.data.imagePath.cleanedPathLocation}";
   }
 }

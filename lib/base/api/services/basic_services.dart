@@ -46,15 +46,15 @@ class BasicServices {
         splashImage.value = "${basePath.value}/${pathLocation.value}/$splash";
         debugPrint(splashImage.value);
         // onboard
-        for (var element in _basicSettingsModel.data.onboardScreens) {
-          onboardScreen.add(
-            OnboardScreen(
-                title: element.title,
-                image:
-                    "${basePath.value}/${pathLocation.value}/${element.image}",
-                status: element.status),
-          );
-        }
+        // for (var element in _basicSettingsModel.data.onboardScreens) {
+        //   onboardScreen.add(
+        //     OnboardScreen(
+        //         title: element.title,
+        //         image:
+        //             "${basePath.value}/${pathLocation.value}/${element.image}",
+        //         status: element.status),
+        //   );
+        // }
 
         privacyPolicy.value = _basicSettingsModel.data.webLinks.privacyPolicy;
         contactUs.value = _basicSettingsModel.data.webLinks.contactUs;

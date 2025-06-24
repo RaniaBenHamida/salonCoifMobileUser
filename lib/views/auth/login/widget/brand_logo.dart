@@ -18,15 +18,14 @@ class BrandLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: MediaQuery.of(context).size.width * 0.4,
+      width: MediaQuery.of(context).size.width * 0.9,
       child: Container(
         // alignment: Alignment.centerLeft,
         margin: edgeInsets ?? EdgeInsets.only(bottom: Dimensions.verticalSize),
-        child: Image.network(
-          Get.isDarkMode ? BasicServices.appBasicLogoDark.value : BasicServices.appBasicLogoWhite.value,
-          scale: scale ?? 1,
-          color: isDarkLogo ? Colors.white : null,
-          filterQuality: FilterQuality.high,
+        child: Image.asset(
+          "assets/logo/basic_logo_dark.png",
+          height: 100,
+          scale: scale ?? 1.0,
           fit: BoxFit.contain,
         ),
       ),

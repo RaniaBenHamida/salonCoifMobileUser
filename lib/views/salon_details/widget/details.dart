@@ -15,7 +15,7 @@ class Details extends GetView<SalonDetailsController> {
           ),
           Sizes.height.v10,
           DoubleSideTextWidget(keys: Strings.parlourName, value: data.name, needDivider: false),
-          DoubleSideTextWidget(keys: Strings.parlourAddress, value: data.address, needDivider: false),
+          DoubleSideTextWidget(keys: Strings.parlourAddress, value: "Sousse , sahloul", needDivider: false),
           DoubleSideTextWidget(keys: Strings.experience, value: data.experience, needDivider: false),
         ],
       )

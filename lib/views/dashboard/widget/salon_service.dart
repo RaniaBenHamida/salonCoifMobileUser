@@ -111,7 +111,7 @@ class SalonService extends GetView<DashboardController> {
                                       ],
                                     ),
                                     Sizes.height.v5,
-                                    TextWidget(data.address,
+                                    TextWidget("Sahloul,sousse,4000",
                                         opacity: .5,
                                         fontWeight: FontWeight.w600,
                                         maxLines: 2,

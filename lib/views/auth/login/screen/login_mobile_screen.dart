@@ -23,7 +23,7 @@ class LogInMobileScreen extends GetView<LogInController> {
           children: [
             Sizes.height.v10,
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.12,
+              height: MediaQuery.of(context).size.height * 0.20,
               child: const BrandLogo(),
             ),
             const HeadingWidget(),

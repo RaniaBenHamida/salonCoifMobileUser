@@ -95,7 +95,7 @@ class Service extends GetView<SalonDetailsController> {
                   ),
                   // Price (Right Aligned)
                   TextWidget(
-                    "\$${double.parse(service.price).toStringAsFixed(2)}",
+                    "\ TND ${double.parse(service.price).toStringAsFixed(2)}",
                     typographyStyle: TypographyStyle.titleSmall,
                     fontWeight: FontWeight.bold,
                   ),

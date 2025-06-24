@@ -41,7 +41,7 @@ class ApiMethod {
   Future<Map<String, dynamic>?> get(
     String url, {
     int code = 200,
-    int duration = 400,
+    int duration = 1400,
     bool showResult = false,
     bool showErrorMessage = true,
   }) async {
@@ -66,8 +66,11 @@ class ApiMethod {
         log.i(response.body.toString());
       }
 
-      log.i(response.statusCode);
-
+      log.i("response.statusCode ${response.statusCode}");
+      log.i("response.headers ${response.headers.toString()}");
+      log.i("response.request ${response.request.toString()}");
+      log.i("response.reasonPhrase ${response.reasonPhrase.toString()}");
+      log.i("response.body ${response.body.toString()}");
       log.i(
           '|📒📒📒|-----------------[[ GET ]] method response end -----------------|📒📒📒|');
 
